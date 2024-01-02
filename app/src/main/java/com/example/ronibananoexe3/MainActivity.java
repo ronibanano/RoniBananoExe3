@@ -18,10 +18,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void exe(View view) {
-        for(int i=0;i<=6;i++){
-            count++;
-            bt.setText("this is a click number: "+count);
+        count++;
+        bt.setText("this is a click number: "+count);
+        if(count==6){
+            bt.setText("Enough to click.go to new start!");
+            count =0;
         }
-        bt.setText("Enough to click.go to new start!");
+
     }
 }
